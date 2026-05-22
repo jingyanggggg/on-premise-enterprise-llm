@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: enterprise_ollama
+    volumes:
+      - ./ollama-data:/root/.ollama
+    restart: always
+    # We don't expose Ollama ports to the host; only the UI needs to talk to it.
+    expose:
+      - "11434"
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: enterprise_webui
+    volumes:
+      - ./webui-data:/app/backend/data
+    ports:
+      - "8080:8080" # Maps port 8080 on the Debian host to 8080 in the container
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434 # Uses internal Docker DNS to route traffic
+    depends_on:
+      - ollama
+    restart: always
