@@ -83,6 +83,6 @@ http://192.168.1.50:8080
 
 ## Proof of Concept
 Prompting the model to analyze a simple script through the Open WebUI interface. The request is fulfilled locally by the remote Debian server.
-![Model Response](open-webui-ai-response.png)
+![Model Response](open-webui-model-response.png)
 
 
