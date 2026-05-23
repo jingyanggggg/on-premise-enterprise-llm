@@ -80,4 +80,4 @@ ping -c 4 8.8.8.8
 http://192.168.1.50:8080
 ```
 
-!(Open WebUI Interface)[open-web-ui.png]
+![Open WebUI Interface](open-web-ui.png)
