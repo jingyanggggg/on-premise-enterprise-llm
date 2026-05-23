@@ -26,6 +26,7 @@ This integration allows domain endpoints to utilize AI capabilities without any 
 *   **Backend AI Engine:** Ollama (serving Google Gemma 4 E2B)
 *   **Frontend UI:** Open WebUI
 *   **Network Security:** Host-Based Gateway Nullification
+*   **Hardware Used:** Old Asus Laptop (Intel i5-8250U 8GB RAM)
 
 ## How to Deploy
 
@@ -80,4 +81,8 @@ ping -c 4 8.8.8.8
 http://192.168.1.50:8080
 ```
 
+# Proof of Concept
+Prompting the model to analyze a simple script through the Open WebUI interface. The request is fulfilled locally by the remote Debian server.
 ![Open WebUI Interface](open-web-ui.png)
+
+
