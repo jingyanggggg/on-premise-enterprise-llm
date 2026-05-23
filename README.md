@@ -77,5 +77,7 @@ Verify that the host can no longer reach external networks while local access re
 ping -c 4 8.8.8.8
 
 # Access the AI UI from your Windows 10 VM (Project 2) or Admin Workstation
-# http://192.168.1.50:8080
+http://192.168.1.50:8080
 ```
+
+!(Open WebUI Interface)[open-web-ui.png]
