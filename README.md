@@ -52,7 +52,7 @@ Edit the network configuration file on the Debian server:
 sudo nano /etc/network/interfaces
 ```
 
-Comment out or delete the default gateway line:
+Configure static IP for Debian server and comment out the default gateway line:
 
 ```text
 allow-hotplug enp3s0
